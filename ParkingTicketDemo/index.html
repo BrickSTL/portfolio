@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Parking Ticket Demo</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./images/favicon.ico">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script  src="js/index.js"></script>
+</head>
+<body>
+<!-- NAVBAR -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <span id="city-state-header"><strong>City <img src='https://upload.wikimedia.org/wikipedia/commons/4/4b/WikiProject_Scouting_fleur-de-lis_red.gif'style="height:1.5rem;margin-bottom:2%;"> State.gov</strong></span>
+      <br>
+      <span id="mayor">Mayor Mike Rogers</span>
+    </div>
+    <div class="navbar-logo">
+      <img src="./images/seal.png">
+
+    </div>
+  </div>
+</nav>
+<!-- SUB BAR -->
+<div class="sub-bar">
+  <div class="col text-left">
+  <h5>Parking Services</h5>
+  </div>
+  <div class="col-6 bullets">
+    <span class="bullet bullet1 active"><i class="fa fa-ticket" style="font-size:24px"></i></span>
+    <span class="bullet bullet2"><i class="fa fa-map-o" style="font-size:24px"></i></span>
+    <span class="bullet bullet3"><i class="fa fa-cc-visa" style="font-size:24px"></i></span>
+    <span class="bullet bullet4"><i class="fa fa-check" style="font-size:24px"></i></span>
+  </div>
+  <div class="col"></div>
+</div>
+<!-- MAIN -->
+<!-- Page1   -->
+<div id="page1" class="container-fluid">
+  <div class="row topLiner">
+    <span>- Find Your Ticket -</span>
+  </div>
+  <div class="row searchbox mx-0">
+    <div class="col pinkbox-space">
+      <div class="pinkbox">
+        <a href='#'><li>Parking Safety Tips</li></a>
+        <a href='#'><li>City Parking Police</li></a>
+        <a href='#'><li>Downtown Parking Map</li></a>
+        <a href='#'><li>Boot Removal/Towing Info</li></a>
+      </div>
+    </div>
+    <div class="col-5 enterticket">
+      <form>
+        <div class="form-group">
+          <label><p class="mb-3">Enter your ticket ID number or license plate in the bar below.</p></label>
+          <input type="email" class="form-control w-100" id="exampleFormControlInput1" placeholder="Ticket ID or License Plate">
+        </div>
+      </form>
+      <div class="control-box">
+        <a data-slide="next" href="#myCarousel" class="carousel-control right">
+          <a><div id="search" class="btn btn-primary mt-3">
+            <p>Search</p>
+            </div></a>
+        </a>
+      </div>
+
+      <div class="subnote">
+        <div class="row pt-2 m-0">
+          <div class="col-2">
+            <span><i class="fa fa-phone" style="font-size:70px"></i></span>
+          </div>
+          <div class="col">
+            <p>Can't locate your ticket?</p>
+            <p>Call (800)-555-5555 to speak with a local ticket agent</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col ticket">
+      <img src="./images/ticket.png" alt="sample ticket" id="sampleticket">
+    </div>
+  </div>
+</div>
+<!-- Page2   -->
+<div id="page2" class="container-fluid">
+    <div class="row topLiner">
+      <span>- Results -</span>
+    </div>
+    <div class="row searchbox mx-0">
+      <div class="col pinkbox-space">
+      </div>
+      <div class="col-5 resultsbox">
+        <div class="result">
+          <p>Here is what our search results found for XXX-XXX. Please select the ticket(s) you would like the pay and press confirm.</p>
+        </div>
+        <div class="row mx-auto my-2">
+          <div class="col results-box-left">
+            <div class="row">
+              <div class="col-1">
+                <input type="radio">
+              </div>
+              <div class="col pl-1 pt-2 text-left">
+                <span>Ticket XXX-XXX was issued to license plate number on 01/02/18.</span>
+              </div>
+            </div>
+            <div class="row form2">
+              <table>
+                <thead>
+                  <tr>
+                  <th class="p3line">Ticket Number</th>
+                  <th class="p3line">Date Issued</th>
+                  <th class="p3line">Fines</th>
+                  <th class="p3line">Total Amount</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td class="p3line">NWES01DMS</td>
+                  <td class="p3line">03/05/2018</td>
+                  <td class="p3line">$15.00</td>
+                  <td class="p3line">$15.00</td>
+                </tr>
+              </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col results-box-right pr-0">
+            <img id='mapimg'src="https://media.wired.com/photos/59269cd37034dc5f91bec0f1/master/pass/GoogleMapTA.jpg">
+          </div>
+        </div>
+        <div class='row btn-rows mb-5 mt-5'>
+          <a><div id="confirm-ticket"class="btn btn-primary px-5">Confirm</div></a>
+          <a href="./index.html"><div id="btn-cation"class="btn px-5">Search Again</div></a>
+        </div>
+      </div>
+      <div class="col text-center">
+          <img src="./images/city-flag.png" style="height:8rem;width:11rem;margin-top:5%;border:2px solid #004056">
+        <div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Signature_of_Willem-Alexander.png" style="height:15%;width:33%;margin-top:5%;">
+        </div>
+        <span> Mayor Michael Smith</span>
+      </div>
+    </div>
+  </div>
+<!-- Page3 -->
+<div id="page3" class="container-fluid">
+  <div class="row topLiner">
+    <span>- Payment Information -</span>
+  </div>
+  <!-- PAYMENT BOX -->
+  <div class="row searchbox mx-0">
+    <!-- Left space holder     -->
+    <div class="col">
+    </div>
+    <!-- Main Holder     -->
+    <div class="col-7 resultsbox">
+      <!-- Ticket Info -->
+      <div class="row">
+        <span><h3>&#x25A0; Ticket Information</h3></span>
+        <span class="text-left">Below is the ticket(s) you have selected. Please confirm you are playing for the correct ticket(s).</span>
+        <div class="row mx-1 my-2">
+          <!--    Ticket Info  -->
+          <div class="col-5 tick-info results-box-left">
+            <div class="row">
+              <span>Ticket XXX-XXX was issued to license plate number on 01/02/18.</span>
+            </div>
+            <div class="row">
+              <table style="width:100%;margin-top:5%;">
+                <thead>
+                  <tr>
+                    <th class="p3line">Ticket Number</th>
+                    <th class="p3line">Date Issued</th>
+                    <th class="p3line">Fines</th>
+                    <th class="p3line">Total Amount</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="p3line">NWES01DMS</td>
+                    <td class="p3line">03/05/2018</td>
+                    <td class="p3line">$15.00</td>
+                    <td class="p3line">$15.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!--    Map Image  -->
+          <div class="col-5 results-box-right">
+            <img id='mapimg'src="https://media.wired.com/photos/59269cd37034dc5f91bec0f1/master/pass/GoogleMapTA.jpg">
+          </div>
+          <div class="col">
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <span class="text-left"><h3>&#x25A0; Payment Options</h3></span>
+        <p class="text-left">Select the your payment method and enter the information below </p>
+      </div>
+      <!--  Payment Options #2     -->
+      <ul class="tabs row">
+        <li class="tab-link current col" data-tab="tab-1">
+          <span class="bullet"><i class="fa fa-credit-card" style="font-size:24px"></i><p>Debt/Credit Card</p></span>
+        </li>
+        <li class="tab-link col" data-tab="tab-2">
+          <span class="bullet"><i class="fa fa-paypal" style="font-size:24px"></i><p>PayPal</p></span>
+        </li>
+        <li class="tab-link col" data-tab="tab-3">
+          <span class="bullet"><i class="fa fa-money" style="font-size:24px"></i><p>Check</p></span>
+        </li>
+      </ul>
+      <!-- Debt-Credit   -->
+      <div id="tab-1" class="tab-content current">
+        <br>
+        <div class="row paypal m-0">
+        <img src="https://freeiconshop.com/wp-content/uploads/edd/creditcard-flat.png" style="height:3rem;width:3rem;">
+        </div>
+        <!--    Card Number       -->
+        <div class="row debt-cred">
+        <input class="form-control w-50" placeholder="Debt or Credit Card Number">
+        <!--    Zip Exp CVC      -->
+        <div class="row text-center">
+          <input class="col form-control" placeholder="Expiration Date">
+          <input class="col form-control mx-3" placeholder="Zip Code">
+          <input class="col form-control" placeholder="CVC Number">
+        </div>
+        </div>
+      </div>
+      <!-- Paypal   -->
+      <div id="tab-2" class="tab-content">
+        <br>
+        <!--    PayPal Logo       -->
+        <div class="row paypal m-0">
+        <img class="mb-3"src="./images/paypal-2.png" style="height:3rem;width:3rem;">
+        </div>
+        <div class="row paypal mt-0">
+        <input class="form-control mt-0" placeholder="PayPal Username or Email Address">
+        <input class="form-control mt-2" placeholder="PayPal Password">
+        </div>
+        <div class="row btn-row paypal">
+        <div class="btn btn-primary w-25">Login</div>
+        </div>
+      </div>
+      <!-- Check   -->
+      <div id="tab-3" class="tab-content">
+        <br>
+        <div class="row paypal m-0">
+        <img class="mb-3"src="./images/check2.png" style="height:3rem;width:3rem;">
+        </div>
+        <!--    Account Name       -->
+        <div class="row debt-cred">
+        <input class="form-control w-75 mt-2" placeholder="Account Holder Name">
+        <!--    Account/Routing     -->
+        <div class="row">
+          <input class="col form-control mx-1" placeholder="Account Number">
+          <input class="col form-control mx-1" placeholder="Routing Number">
+        </div>
+        </div>
+      </div>
+       <!-- Finalize -->
+      <div class="row mt-2">
+        <div class="text-left">
+          <span><h3>&#x25A0; Finalize</h3></span>
+          <p>Select the your payment method and enter the information below </p>
+        </div>
+        <!-- Ticket Info -->
+        <table style="width:100%;">
+          <thead>
+            <tr>
+              <th>Ticket Number</th>
+              <th>Date Issued</th>
+              <th>Fines</th>
+              <th>Total Amount</th>
+              <th>Payment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>NWES01DMS</td>
+              <td>03/05/2018</td>
+              <td>$15.00</td>
+              <td>$15.00</td>
+              <td>Visa XXX-1234</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="mt-5">Please enter an email address below. We will send you a confirmation email once the payment is processed.</p>
+        <input class="form-control w-100" placeholder="Enter Email Address">
+        <div class="col mt-2 text-left p-0">
+          <input id="box1" type="checkbox" />
+          <label for="box1">I accept the <a href="#">Terms and Conditions</a> </label>
+        </div>
+      </div>
+       <!--  Buttons      -->
+      <div class='row btn-rows  mx-0 mb-5 mt-5'>
+        <a><div id="confirm-final" class="btn px-5 btn-primary">Confirm</div></a>
+        <a href="./index.html"><div id="btn-cation"class="btn px-5">Cancel</div></a>
+      </div>
+     <!--    End of ResultsBox   -->
+    </div>
+    <!-- Right Flag + Signature     -->
+    <div class="col text-center">
+        <img src="./images/city-flag.png" style="height:8rem;width:11rem;margin-top:5%;border:2px solid #004056">
+      <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Signature_of_Willem-Alexander.png" style="height:15%;width:33%;margin-top:5%;">
+      </div>
+      <span> Mayor Michael Smith</span>
+    </div>
+  </div>
+</div>
+<!-- Page4 -->
+<div id="page4" class="container-fluid">
+  <!--  TITLE LINE  -->
+  <div class="row topLiner">
+    <span>- Payment Confirmation -</span>
+  </div>
+  <!--  THANK YOU TEXT  -->
+  <div class="row mx-0 mb-3">
+    <!-- Left space holder     -->
+    <div class="col-2"></div>
+    <!-- Main Holder     -->
+    <div class="col-6 resultsbox">
+      <!--  Confirmation      -->
+      <div class="confirmbox">
+        <h2 class="text-left">Thank You!</h2>
+        <h6 class="text-left">Your payment has been successfully processed. Ticket number XXX-XXX-XX is considered complete and requires no additional action.</h6>
+      </div>
+      <!-- Ticket Details -->
+      <div class="row">
+        <table style="width:100%;justify-content:center;margin-top:5%;">
+          <thead>
+            <tr>
+              <th>Ticket Number</th>
+              <th>Date Issued</th>
+              <th>Fines</th>
+              <th>Total Amount</th>
+              <th>Payment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>NWES01DMS</td>
+              <td>03/05/2018</td>
+              <td>$15.00</td>
+              <td>$15.00</td>
+              <td>Visa XXX-1234</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+       <!--  Return Buttons      -->
+      <div class='row btn-rows my-5'>
+        <a href="./index.html"><div id="btn-return" class="btn btn-primary">Return to Parking Services</div></a>
+      </div>
+       <!--    End of ResultsBox   -->
+    </div>
+    <!-- Right Flag + Signature     -->
+    <div class="col text-center">
+        <img src="./images/city-flag.png" style="height:8rem;width:11rem;margin-top:5%;border:2px solid #004056">
+      <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Signature_of_Willem-Alexander.png" style="height:15%;width:33%;margin-top:5%;">
+      </div>
+      <span> Mayor Michael Smith</span>
+    </div>
+  </div>
+</div>
+<!-- FOOTER -->
+<div class="footer">
+    <a href="#">Home</a>
+    <a href="#">Assitance</a>
+    <a href="#">Contact</a>
+</div>
+
+</body>
+
+</html>

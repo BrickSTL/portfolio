@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Parking Ticket Demo</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- NAVBAR -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <span id="city-state-header"><strong>City <img src='https://upload.wikimedia.org/wikipedia/commons/4/4b/WikiProject_Scouting_fleur-de-lis_red.gif'style="height:1.5rem;margin-bottom:2%;"> State.gov</strong></span>
+      <br>
+      <span id="mayor">Mayor Mike Rogers</span>
+    </div>
+    <div class="navbar-logo">
+      <img src="./images/seal.png">
+
+    </div>
+  </div>
+</nav>
+<!-- SUB BAR -->
+<div class="sub-bar">
+  <div class="col text-left">
+  <h5>Parking Services</h5>
+  </div>
+  <div class="col-6 bullets">
+    <span class="bullet active"><i class="fa fa-ticket" style="font-size:24px"></i></span>
+    <span class="bullet"><i class="fa fa-map-o" style="font-size:24px"></i></span>
+    <span class="bullet"><i class="fa fa-cc-visa" style="font-size:24px"></i></span>
+    <span class="bullet"><i class="fa fa-check" style="font-size:24px"></i></span>
+  </div>
+  <div class="col"></div>
+</div>
+<!-- MAIN -->
+<div class="container-fluid">
+  <div class="row topLiner">
+    <span>- Find Your Ticket -</span>
+  </div>
+  <div class="row searchbox mx-0">
+    <div class="col pinkbox-space">
+      <div class="pinkbox">
+        <a href='#'><li>Parking Safety Tips</li></a>
+        <a href='#'><li>City Parking Police</li></a>
+        <a href='#'><li>Downtown Parking Map</li></a>
+        <a href='#'><li>Boot Removal/Towing Info</li></a>
+      </div>
+    </div>
+    <div class="col enterticket">
+      <form>
+        <div class="form-group">
+          <label for="exampleFormControlInput1"><p>Enter your ticket ID number or license plate in the bar below.</p></label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ticket ID or License Plate">
+        </div>
+      </form>
+      <div class="control-box">
+        <a data-slide="next" href="#myCarousel" class="carousel-control right">
+          <a href="./index2.html"><div id="search" class="btn btn-primary mt-5 px-5">
+            <p>Search</p>
+            </div></a>
+        </a>
+      </div>
+
+      <div class="subnote">
+        <p>Can't locate your ticket?</p>
+        <p>Call (800)-555-5555 to speak with a local ticket agent</p>
+      </div>
+    </div>
+    <div class="col ticket">
+      <img src="./images/ticket.png" alt="sample ticket" id="sampleticket">
+    </div>
+  </div>
+</div>
+<!-- FOOTER -->
+<div class="footer">
+    <a href="#">Home</a>
+    <a href="#">Assitance</a>
+    <a href="#">Contact</a>
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script  src="js/index.js"></script>
+</body>
+
+</html>

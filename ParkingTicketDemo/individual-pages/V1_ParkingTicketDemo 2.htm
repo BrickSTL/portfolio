@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ParkingTicketDemo</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <!-- Google Fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="./resources1/CSS1/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./resources1/CSS1/styles.css">
+    <!-- Javascript -->
+    <script type="text/javascript" src="./resources/js1/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="./resources/js1/main.js"></script>
+  </head>
+  <body>
+    <!-- Jumbotron Carousal-->
+    <div class="container">
+      <!-- HEADER -->
+      <div class="header">
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4">
+                <a href="#" class="logo">
+                  <span class="logo top"><strong>City</strong> - ST<img src="./resources/images/fleur-de-lis-red-20px.gif" alt="">.GOV</span>
+                  <span class="logo bottom">Mayor Mike Rogers</span>
+                </a>
+              </div>
+              <div class="col-md-1 seal-right">
+              </div>
+            </div>
+        </div>
+      </div>
+      <!-- PAGEs -->
+      <div class="container-fluid subtitle">
+        <div class="bullets">
+
+            <span class="bullet active" id="bullet1" data-image="4" data-slide="1"><i class="fa fa-ticket" style="font-size:24px"></i></span>
+            <span class="bullet" id="bullet2" data-image="5" data-slide="2"><i class="fa fa-map-o" style="font-size:24px"></i></span>
+            <span class="bullet" id="bullet3" data-image="6" data-slide="3"><i class="fa fa-cc-visa" style="font-size:24px"></i></span>
+            <span class="bullet" id="bullet4" data-image="7" data-slide="4"><i class="fa fa-shopping-cart" style="font-size:24px"></i></span>
+            <span class="bullet last" id="bullet5" data-image="8" data-slide="5"><i class="glyphicon glyphicon-ok"></i></span>
+            <div class="connecting-line"></div>
+        </div>
+      </div>
+      <div class="col-md-3 pinkbox">
+        <span>Related Links</span>
+        <ul>
+          <a><li>Parking Safety Tips</li></a>
+          <a><li>City of Parking Policy</li></a>
+          <a><li>Downtown Parking Map</li></a>
+          <a><li>Boot Removal/Towing Info</li></a>
+        </ul>
+      </div>
+      <div id="slider">
+              <ul class="slides">
+                <!-- Page 1 -->
+                  <li class="slide">
+                    <!--Main-->
+
+                    <h2 id="toptitle">- Find Your Ticket -</h2>
+                    <div class="container-fluid main">
+                      <div class  ="row searchbox">
+                      <div class="col pinkbox-space">
+
+                      </div>
+                      <div class="col enterticket">
+                        <form>
+                          <div class="form-group">
+                            <label for="exampleFormControlInput1"><p>Enter your ticket ID number or license plate in the bar below</p></label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ticket ID or License Plate">
+                          </div>
+                        </form>
+                        <!-- <div id="search" class="btn btn-primary">
+                        </div> -->
+                        <div class="control-box">
+                          <a data-slide="next" href="#myCarousel" class="carousel-control right">
+                           <div id="search" class="btn btn-primary">
+                             <p>Search</p>
+                          </div>
+                          </a>
+                        </div>
+
+                        <div class="subnote">
+                          <p>Can't locate your ticket?</p>
+                          <p>Call (800)-555-5555 to speak with a local ticket agent</p>
+                        </div>
+                      </div>
+                      <div class="col ticket">
+                        <img src="./resources/images/ticket.png" alt="" id="sampleticket">
+                      </div>
+                      </div>
+                    </div>
+                <!-- Page 2 -->
+                  <li class="slide">
+                        <h2 id="toptitle">- Results -</h2>
+                        <div class="container-fluid main">
+                          <div class="row resultsbox">
+                            <div class="col pinkbox-space">
+
+                            </div>
+                            <div class="col enterticket">
+                              <div class="results">
+                                <div class="result-content">
+                                  <p>Here is what our search has found for XXX-XXX. Please select the ticket(s) you would like to pay and click confirm to proceed to the payment page</p>
+                                </div>
+                                <div class="mapbox">
+                                  <div class="box details">
+                                    <p>Ticket XXX was issued to License Plate Number XXX at 5:55PM on Grand Ave.</p>
+                                      <table class="table1">
+                                        <tr>
+                                          <th>Ticket Number</th>
+                                          <th>Date Issued</th>
+                                          <th>Cost</th>
+                                        </tr>
+                                        <tr>
+                                          <td>TX18966K</td>
+                                          <td>2/13/18</td>
+                                          <td>$10.00</td>
+                                        </tr>
+                                        <tr>
+                                          <td>WSXA5429</td>
+                                          <td>2/19/18</td>
+                                          <td>$20.00</td>
+                                        </tr>
+                                      </table>
+
+                                  </div>
+                                  <div class=" box map">
+
+                                  </div>
+                                </div>
+                                <div class="buttons">
+
+                                  <div class="control-box results-btn">
+                                    <a data-slide="next" href="#myCarousel" class="carousel-control right">
+                                     <div id="correct" class="btn btn-primary">
+                                       <p>Confirm</p>
+                                    </div>
+                                    </a>
+                                  </div>
+
+                                  <div class="control-box results-btn">
+                                    <a data-slide="next" href="#myCarousel" class="carousel-control left">
+                                     <div id="again" class="btn btn-primary">
+                                       <p>Search Again</p>
+                                    </div>
+                                    </a>
+                                  </div>
+
+                                </div>
+                                <div class="subnote2">
+                                  <p>Can't locate your ticket?</p>
+                                  <p>Call (800)-555-5555 to speak with a local ticket agent</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col ticket">
+                              <div class="stlflag">
+                              </div>
+                              <div class="signature">
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                <!-- Page 3 -->
+                  <li class="slide">
+                    <h2 id="toptitle">- Payment Information -</h2>
+                    <div class="container-fluid main">
+                      <div class="col enterticket">
+                        <div class="col-md-1 pinkbox-cover">
+                        </div>
+                        <div class="col-md-8 payment">
+                            <!-- Ticket Info Line -->
+                          <div class="payment-content tickinfo">
+                            <span class="dots">&#8865;</span><span class="title">Ticket Information</span>
+                            <p>Below is the ticket(s) you have selected to pay off. Please confirm you are paying for the correct ticket(s)</p>
+                            <div class="mapbox">
+                              <div class="details">
+                                <p>Ticket XXX was issued to License Plate Number XXX at 5:55PM on Grand Ave.</p>
+                                  <table class="table2">
+                                    <tr>
+                                      <th>Ticket Number</th>
+                                      <th>Date Issued</th>
+                                      <th>Cost</th>
+                                    </tr>
+                                    <tr>
+                                      <td>TX18966K</td>
+                                      <td>2/13/18</td>
+                                      <td>$10.00</td>
+                                    </tr>
+                                    <tr>
+                                      <td>WSXA5429</td>
+                                      <td>2/19/18</td>
+                                      <td>$20.00</td>
+                                    </tr>
+                                  </table>
+
+                              </div>
+                              <div class="map">
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Payment Options -->
+                          <div class="row">
+                            <div class="payment-content options">
+                              <span class="dots">&#8865;</span><span class="title">Payment Options</span>
+                              <p>Select the your payment method and enter the information below </p>
+                              <div class="row icons">
+                                <input type="radio" id="radioButton">
+                                <div class="icon debt">
+
+                                </div>
+                                <p>Debt/Credit Card</p>
+                                <input type="radio" id="radioButton">
+                                <div class="icon paypal">
+
+                                </div>
+                                <p>PayPal</p>
+                                <input type="radio" id="radioButton">
+                                <div class="icon check">
+
+                                </div>
+                                <p>Check</p>
+                              </div>
+                            </div>
+                            <!-- Debt Card Forms -->
+                            <div class="row forms">
+                              <form>
+                              <div class="form-group pay">
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Debt or Credit Card Number">
+                              </div>
+                              </form>
+                            </div>
+                            <div class="secondline">
+                              <div class="forms">
+                                <form>
+                                <div class="form-group pay">
+                                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Expiration Date">
+                                </div>
+                                </form>
+                              </div>
+                              <div class="forms">
+                                <form>
+                                <div class="form-group pay">
+                                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Zip Code">
+                                </div>
+                                </form>
+                              </div>
+                              <div class="forms">
+                                <form>
+                                <div class="form-group pay">
+                                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="CVC Number">
+                                </div>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="control-box pay-btn">
+                              <a data-slide="next" href="#myCarousel" class="carousel-control right">
+                               <div id="pagetwo" class="btn btn-primary">
+                                 <p>Next</p>
+                              </div>
+                              </a>
+                            </div>
+                            <!-- Check Forms -->
+                            <!-- <div class="row forms">
+                              <form>
+                              <div class="form-group pay routing">
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Routing number">
+                              </div>
+                              </form>
+                            </div>
+                            <div class="secondline">
+                              <div class="forms">
+                                <form>
+                                <div class="form-group pay">
+                                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Expiration Date">
+                                </div>
+                                </form>
+                              </div>
+                              <div class="forms">
+                                <form>
+                                <div class="form-group pay">
+                                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Zip Code">
+                                </div>
+                                </form>
+                              </div>
+                              <div class="forms">
+                                <form>
+                                <div class="form-group pay">
+                                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="CVC Number">
+                                </div>
+                                </form>
+                              </div>
+                            </div> -->
+                          </div>
+                        </div>
+                        <div class="col-md-3 payflag">
+                          <div class="stlflag">
+                          </div>
+                          <div class="signature">
+
+                          </div>
+                          <span id="signature">Mayor Lyda Krewson</span>
+                        </div>
+
+                      </div>
+                    </div>
+                <!-- Page 4 -->
+                  <li class="slide">
+                    <h2 id="toptitle">- Payment Information -</h2>
+                    <div class="container-fluid main">
+                      <div class="col enterticket">
+                        <div class="col-md-1 pinkbox-cover">
+                        </div>
+                        <div class="col-md-8 payment">
+                          <!-- Billing Info -->
+                          <div class="row">
+                            <div class="payment-content options">
+                              <span class="dots">&#8865;</span><span class="title">Billing Information</span>
+                              <p>Enter you the billing address for your payment below</p>
+                            </div>
+                            <div class="row forms">
+                              <form>
+                                <div class="form-group pay">
+                                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Billing Name">
+                                </div>
+                              </form>
+                            </div>
+                            <div class="row forms">
+                              <form>
+                                <div class="form-group pay">
+                                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Street Address">
+                                </div>
+                              </form>
+                            </div>
+                            <div class="row forms">
+                              <form>
+                                <div class="form-group pay">
+                                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Apartment #">
+                                </div>
+                              </form>
+                            </div>
+                            <div class="secondline">
+                              <div class="forms">
+                                <form>
+                                  <div class="form-group pay">
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="State Initials">
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="forms">
+                                <form>
+                                  <div class="form-group pay">
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Zip Code">
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Finalize -->
+                          <div class="row">
+                            <div class="payment-content options">
+                              <span class="dots">&#8865;</span><span class="title">Finalize Payment</span>
+                            </div>
+                            <table class="ticket-bottom">
+                              <tr>
+                                <th>Ticket Number</th>
+                                <th>Date Issued</th>
+                                <th>Fine Added</th>
+                                <th>Total Cost</th>
+                                <th>Payment</th>
+                              </tr>
+                              <tr>
+                                <td>TX18966K</td>
+                                <td>2/13/18</td>
+                                <td>$5.00</td>
+                                <td>$10.00</td>
+                                <td>Visa Debt XXX-XXX-5669</td>
+                              </tr>
+                            </table>
+                          </div>
+                          <!-- Email Line -->
+                          <p id="email-instructions">Please enter an email address below. We will send you a confirmation email once the payment is processed.</p>
+                          <div class="row forms email">
+                            <form>
+                              <div class="form-group pay">
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Email Address">
+                              </div>
+                            </form>
+                          </div>
+                          <!-- Complete Button -->
+                          <div class="buttons complete">
+                            <!-- Terms of Service Check -->
+                            <div class="TCcheck">
+                              <input id="box1" type="checkbox" />
+                              <label for="box1">I accept the <a href="#">Terms and Conditions</a> </label>
+                            </div>
+                            <div class="control-box fin-btn">
+                              <a data-slide="next" href="#myCarousel" class="carousel-control right">
+                               <div id="correct" class="btn btn-primary">
+                                 <p>Complete Transaction</p>
+                              </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3 payflag">
+                          <div class="stlflag">
+                          </div>
+                          <div class="signature">
+
+                          </div>
+                          <span id="signature">Mayor Lyda Krewson</span>
+                        </div>
+                      </div>
+                    </div>
+                <!-- Page 5 -->
+                  <li class="slide">
+                        <h2 id="toptitle">- Payment Confirmation -</h2>
+                        <div class="container-fluid main">
+                          <div class="row">
+
+                            <div class="col enterticket">
+                              <div class="thankyou">
+                                <div class="row">
+                                  <div class="col-md-1 pinkbox-cover">
+                                  </div>
+                                  <div class="col-md-8 note">
+                                    <div class="note-text">
+                                      <h3 id="thanks">Thank You!</h3>
+                                      <p>Your payment has been successfully processed. Ticket number XXX-XXXX-XXX is considered complete and frequires no additional action from the citizen. You will recieve a confirmation email shortly.</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-3 flag">
+                                    <div class="stlflag">
+                                    </div>
+                                    <div class="signature">
+
+                                    </div>
+                                    <span id="signature">Mayor Lyda Krewson</span>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="paydets">
+                                    <span class="dots">&#8865;</span><span class="title">Payment Details</span>
+                                    <table class="table3">
+                                      <tr>
+                                        <th>Ticket Number</th>
+                                        <th>Date Issued</th>
+                                        <th>Fine Added</th>
+                                        <th>Total Cost</th>
+                                        <th>Payment</th>
+                                      </tr>
+                                      <tr>
+                                        <td>TX18966K</td>
+                                        <td>2/13/18</td>
+                                        <td>$5.00</td>
+                                        <td>$10.00</td>
+                                        <td>Visa Debt XXX-XXX-5669</td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                  <div class="control-box">
+                                    <a data-slide="next" href="#myCarousel" class="carousel-control right">
+                                     <div id="returntomain" class="btn btn-primary">
+                                       <p>Return to Main Page</p>
+                                    </div>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col ticket">
+                            </div>
+                          </div>
+                        </div>
+                <!-- Fake Page-->
+                  <li class="slide">
+                    <h2 id="toptitle">- Payment Information -</h2>
+                    <div class="container-fluid main">
+                      <h2 id="toptitle">- Payment Confirmation -</h2>
+                      <div class="col enterticket">
+                          <div class="thankyou">
+
+                          </div>
+                      </div>
+                    </div>
+              </ul>
+          </div>
+      <!--FOOTER-->
+      <p id="copyright">Ben Merrill Design &copy; 2018</p>
+      <div class="footer">
+        <a href="#">Home</a>
+        <a href="#">Assitance</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Parking Ticket Demo</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <span id="city-state-header"><strong>City <img src='https://upload.wikimedia.org/wikipedia/commons/4/4b/WikiProject_Scouting_fleur-de-lis_red.gif'style="height:1.5rem;margin-bottom:2%;"> State.gov</strong></span>
+        <br>
+        <span id="mayor">Mayor Mike Rogers</span>
+      </div>
+      <div class="navbar-logo">
+        <img src="./images/seal.png">
+
+      </div>
+    </div>
+  </nav>
+  <!--  SUB-LINE -->
+  <div class="sub-bar">
+    <div class="col text-left">
+    <h5>Parking Services</h5>
+    </div>
+    <div class="col-6 bullets">
+      <span class="bullet active"><i class="fa fa-ticket" style="font-size:24px"></i></span>
+      <span class="bullet active"><i class="fa fa-map-o" style="font-size:24px"></i></span>
+      <span class="bullet active"><i class="fa fa-cc-visa" style="font-size:24px"></i></span>
+      <span class="bullet active"><i class="fa fa-check" style="font-size:24px"></i></span>
+    </div>
+    <div class="col"></div>
+  </div>
+  <!--  MAIN  -->
+  <div class="container-fluid">
+    <div class="row topLiner">
+      <span>- Results -</span>
+    </div>
+    <div class="row searchbox mx-0">
+      <div class="col pinkbox-space">
+        <div class="pinkbox">
+          <a href='#'><li>Parking Safety Tips</li></a>
+          <a href='#'><li>City Parking Police</li></a>
+          <a href='#'><li>Downtown Parking Map</li></a>
+          <a href='#'><li>Boot Removal/Towing Info</li></a>
+        </div>
+      </div>
+      <div class="col-5 resultsbox">
+        <div class="result">
+          <p>Here is what our search results found for XXX-XXX. Please select the ticket(s) you would like the pay and press confirm.</p>
+        </div>
+        <div class="row my-2">
+          <div class="col results-box-left">
+            <div class="row">
+            <input type="radio">
+            <span>Ticket XXX-XXX was issued to license plate number on 01/02/18.</span>
+            </div>
+            <div class="row">
+              <table>
+                <thead>
+                  <tr>
+                  <th class="p3line">Ticket Number</th>
+                  <th class="p3line">Date Issued</th>
+                  <th class="p3line">Fines</th>
+                  <th class="p3line">Total Amount</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td class="p3line">NWES01DMS</td>
+                  <td class="p3line">03/05/2018</td>
+                  <td class="p3line">$15.00</td>
+                  <td class="p3line">$15.00</td>
+                </tr>
+              </tbody>
+              </table>
+            </div>
+        </div>
+          <div class="col results-box-right">
+            <img id='mapimg'src="https://media.wired.com/photos/59269cd37034dc5f91bec0f1/master/pass/GoogleMapTA.jpg">
+          </div>
+        </div>
+        <div class='row btn-rows my-4'>
+          <a href="./index3.html"><div class="btn btn-primary">Confirm</div></a>
+          <a href="./index.html"><div id="btn-cation"class="btn">Search Again</div></a>
+        </div>
+      </div>
+      <div class="col">
+      </div>
+    </div>
+  </div>
+  <!--  FOOTER  -->
+  <div class="footer">
+      <a href="#">Home</a>
+      <a href="#">Assitance</a>
+      <a href="#">Contact</a>
+    </div>
+</body>
+</html>
